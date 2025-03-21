@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Donation Details</h2>
+    <form method="POST">
+        <label for="item">Food Item</label>
+        <input type="text" id="item" name="item" required>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required>
+        <label for="phone_number">Phone Number</label>
+        <input type="text" id="phone_number" name="phone_number" required>
+        <input type="hidden" name="waste_quantity" value="{{ waste_quantity }}">
+        <button type="submit">Submit Donation</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Donation Details</h1>
+<form method="POST" action="{{ url_for('donation_details', waste_quantity=waste_quantity) }}">
+    <label for="item">Item to Donate:</label>
+    <input type="text" id="item" name="item" required>
+    <label for="location">Donation Location:</label>
+    <input type="text" id="location" name="location" required>
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" required>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

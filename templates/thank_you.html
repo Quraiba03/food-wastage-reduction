@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Thank You for Your Donation!</h1>
+    <p>Your donation is greatly appreciated. Your contribution helps reduce food wastage and support those in need.</p>
+
+    <h2>Charts and Analysis</h2>
+    <p>Thank you for your donation. Please check out the latest charts and analysis related to food wastage and hunger.</p>
+
+    <h2>Donation Chart</h2>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='bar_chart_donations_by_item.png') }}" alt="Donation Chart">
+    </div>
+
+    <h2>Food Wastage Analysis</h2>
+    <p>Every day, millions of tons of food are wasted, while countless people around the world go hungry. By contributing to our food donation program, you're not just giving away surplus food—you're making a powerful statement against hunger and waste.</p>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='pie_chart_food_waste_by_region.png') }}" alt="Food Waste by Region">
+    </div>
+
+    <h2>Hunger Levels Over the Years</h2>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='bar_chart_hunger_levels_over_years.png') }}" alt="Hunger Levels Over the Years">
+    </div>
+
+    <h2>Correlation Heatmap</h2>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='correlation_heatmap.png') }}" alt="Correlation Heatmap">
+    </div>
+
+    <h2>Distribution of Food Waste</h2>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='distribution_food_waste.png') }}" alt="Distribution of Food Waste">
+    </div>
+
+    <h2>Food Waste vs. Hunger Index</h2>
+    <div class="chart-container">
+        <img src="{{ url_for('static', filename='scatter_plot_food_waste_vs_hunger_index.png') }}" alt="Food Waste vs. Hunger Index">
+    </div>
+
+    <p>Your donation helps to transform excess into opportunity, turning what would be wasted into nourishment for those in need. Each act of generosity creates ripples of positive change, helping to build a world where no one has to go to bed hungry and where our resources are used wisely.</p>
+
+    <p>Thank you for your donation. Your support doesn't just fill plates—it fills hearts and strengthens communities. By being a part of this mission, you're making a lasting impact and helping to create a more sustainable and compassionate world.</p>
+
+    <p>Join us in this vital mission to reduce food waste and provide for those who need it most. Together, we can make a difference.</p>
+
+    <p>Thank you for your kindness and commitment to a better world.</p>
+</div>
+{% endblock %}

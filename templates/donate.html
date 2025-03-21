@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Do you want to donate the leftover food?</h2>
+    <form method="POST">
+        <button type="submit" name="donate" value="yes">Yes</button>
+        <button type="submit" name="donate" value="no">No</button>
+    </form>
+</div>
+{% endblock %}

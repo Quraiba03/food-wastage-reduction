@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Food Wastage Analysis</h1>
+<img src="{{ url_for('static', filename='wastage_chart.png') }}" alt="Food Wastage Chart">
+
+
+
+    <h2>Donation Chart</h2>
+    <img src="{{ url_for('static', filename='bar_chart_donations_by_item.png') }}" alt="Donations by Item">
+    
+    <br>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+    
+</body>
+</html>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+<body class="no-scroll">
+   
+
+  
+{% block content %}
+<div class="form-container">
+<h1 class="welcome-text">Welcome to the Food Donation App</h1>
+{% if 'username' in session %}
+<h3 class="welcome-text">Hello, {{ session['username'] }}!</h3>
+{% endif %}
+</div>
+ <!-- Page content -->
+</body>
+{% endblock %}

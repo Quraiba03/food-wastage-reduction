@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Report Food Leftover</h2>
+    <form method="POST">
+        <label for="food_item">Food Item</label>
+        <input type="text" id="food_item" name="food_item" required>
+        <label for="purchased_quantity">Purchased Quantity (kg)</label>
+        <input type="number" id="purchased_quantity" name="purchased_quantity" required>
+        <label for="consumed_quantity">Consumed Quantity (kg)</label>
+        <input type="number" id="consumed_quantity" name="consumed_quantity" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
