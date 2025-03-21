@@ -1,0 +1,159 @@
+/* Basic reset and setup */
+/* Ensure you have the Algerian font available */
+@import url('https://fonts.googleapis.com/css2?family=Algerian&display=swap'); /* Import Algerian font from Google Fonts */
+
+/* Styling for the welcome text */
+
+.welcome-text {
+    
+    font-family: 'Algerian', sans-serif; /* Apply the Algerian font */
+    font-size: 4em; /* Adjust the font size as needed */
+    text-align: center; /* Center-align the text */
+    color: #000; /* White color for contrast against the background */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.user-greeting {
+    font-size: 2.5em; /* Make the font size larger */
+    font-weight: bold; /* Make the text bold */
+    color: #000f; /* White color for contrast */
+    margin-top: 20px; /* Space between heading and greeting */
+    text-align: center; /* Center-align the text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/background.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Fixes the image so it doesn't scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for readability */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* Fixes the header at the top */
+    width: 100%; /* Ensures it spans the full width */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Aligns it to the left */
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    margin-top: 60px; /* Adds top margin to prevent content from hiding behind the fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 60px); /* Ensure main section takes full viewport height minus header */
+}
+
+/* Centered container for forms and other content */
+.form-container {
+    max-width: 800px; /* Maximum width of the form container */
+    width: 100%; /* Ensures the container takes full width up to the max-width */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    margin: 20px auto; /* Centered with margin for spacing */
+    text-align: center; /* Center all text */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    text-align: center; /* Center the form heading */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Ensure labels are bold */
+    text-align: left; /* Align labels to the left for readability */
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Optional rounded corners for inputs */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* Optional rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer for buttons */
+}
+
+.form-container button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.flashes li {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.chart-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chart-container img {
+    max-width: 100%; /* Ensure images do not overflow the container */
+    height: auto;
+}
+
+/* Specific Styles for Home Page */
+.home-page {
+    overflow: hidden; /* Prevent scrolling on the home page */
+    height: 100vh; /* Full viewport height */
+}
+
